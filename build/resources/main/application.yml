@@ -1,0 +1,33 @@
+services:
+  openweathermap:
+    endpoint: 'http://api.openweathermap.org'
+    path: '/data/2.5/weather'
+    appid: '9c783130312b92a5d55f1786514b6fad'
+
+server:
+  servlet:
+    context-path: /weather-app
+
+spring:
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+bucket4j:
+  enabled: true
+  filters:
+    - cache-name: buckets
+      filter-method: servlet
+      url: .*
+      rate-limits:
+        - bandwidths:
+            - capacity: 5
+              time: 1
+              unit: hours

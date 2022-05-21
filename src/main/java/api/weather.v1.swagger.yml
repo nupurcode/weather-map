@@ -1,0 +1,64 @@
+swagger: "2.0"
+info:
+  description: "A simple weather app which provides weather details for a country and city"
+  version: "1.0.0"
+  title: "Weather App"
+  contact:
+    email: "nupurx@gmail.com"
+host: "petstore.swagger.io"
+basePath: "/v1/weather-app"
+tags:
+  - name: "weather"
+    description: "About the weather"
+    externalDocs:
+      description: "Find out more"
+      url: "http://swagger.io"
+schemes:
+  - "http"
+paths:
+  /weather/{city}/{countryCode}:
+    get:
+      tags:
+        - "weather"
+      summary: "get weather summery by providing city name and country code"
+      description: "Returns short description of weather"
+      operationId: "getWeather"
+      produces:
+        - "application/json"
+      parameters:
+        - name: "city"
+          in: "path"
+          description: "name of the city"
+          required: true
+          type: "string"
+        - name: "countryCode"
+          in: "path"
+          description: "code of the country"
+          required: true
+          type: "string"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/weather"
+        "429":
+          description: "Too Many requests"
+        "404":
+          description: "not found"
+      security:
+        - api_key: []
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+definitions:
+  weather:
+    type: "object"
+    properties:
+      description:
+        type: "string"
+        description: "weather short description"
+externalDocs:
+  description: "Find out more about Weather Restful app"
+  url: "http://weatherapp.io"
