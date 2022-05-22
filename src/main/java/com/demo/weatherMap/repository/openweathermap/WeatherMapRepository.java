@@ -22,23 +22,24 @@ public class WeatherMapRepository {
     String openWeatherMapAppId;
 
     private final String locationParameter = "q";
-    private final String appIdParameter = "appid";
+    private final String appIdParameter = "appId";
 
+    /**
+     * sends rest call to openWeatherMap.org
+     * @param location composite of city and country code for weather query
+     * @return selective response parameters from downstream
+     */
     public OpenWeatherMapResponse callOpenWeatherMap(String location) {
-
-        return WebClient.create(openWeatherMapEndpoint)
-                .get()
-                .uri(uriBuilder -> uriBuilder.path(openWeatherMapPath)
-                        .queryParam(locationParameter, location)
-                        .queryParam(appIdParameter, openWeatherMapAppId)
-                        .build())
-                .retrieve()
-                .onStatus(HttpStatus::isError, response -> response.bodyToMono(ClientError.class)
-                        .flatMap(clientError -> Mono.error(new WeatherDownstreamException(clientError))))
-                .bodyToMono(OpenWeatherMapResponse.class)
-                .block();
+            return WebClient.create(openWeatherMapEndpoint)
+                    .get()
+                    .uri(uriBuilder -> uriBuilder.path(openWeatherMapPath)
+                            .queryParam(locationParameter, location)
+                            .queryParam(appIdParameter, openWeatherMapAppId)
+                            .build())
+                    .retrieve()
+                    .onStatus(HttpStatus::isError, response -> response.bodyToMono(ClientError.class)
+                            .flatMap(clientError -> Mono.error(new WeatherDownstreamException(clientError))))
+                    .bodyToMono(OpenWeatherMapResponse.class)
+                    .block();
     }
-
-
-
 }

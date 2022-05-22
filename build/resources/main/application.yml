@@ -28,6 +28,6 @@ bucket4j:
       url: .*
       rate-limits:
         - bandwidths:
-            - capacity: 5
+            - capacity: 500
               time: 1
               unit: hours

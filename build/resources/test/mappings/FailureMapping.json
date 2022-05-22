@@ -1,0 +1,17 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "/data/2.5/weather?q=Zootopia,UK&appId=9c783130312b92a5d55f1786514b6fad"
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {"cod":"404","message":"city not found"}
+      }
+    }
+  ]
+}

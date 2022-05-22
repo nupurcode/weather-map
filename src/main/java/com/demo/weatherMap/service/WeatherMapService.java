@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 import java.util.Arrays;
 import java.util.Optional;
 
+import static com.demo.weatherMap.utils.Constants.PARAM_SEPARATOR;
+
 @Service
 public class WeatherMapService {
 
@@ -22,7 +24,15 @@ public class WeatherMapService {
     @Autowired
     OpenWeatherDatabaseRepository openWeatherMapRepository;
 
+    /**
+     * processes business logic for weather app,
+     * query database and then repository if no records found in database
+     * @param city to get weather for
+     * @param countryCode to get weather for
+     * @return WeatherResponse with short description of current weather
+     */
     public WeatherResponse getWeatherData(String city, String countryCode) {
+        //query data from database
         Optional<Weather> weather = openWeatherMapRepository.findById(Location.builder()
                         .city(city)
                         .country(countryCode).build());
@@ -30,9 +40,9 @@ public class WeatherMapService {
             return WeatherResponse.builder().description(weather.get().getDescription())
                     .build();
         } else {
-            //call openWeatherMap.org downstream
+            //call openWeatherMap.org downstream repository
             WeatherDetail weatherDetail =
-                    Arrays.stream(weatherMapRepository.callOpenWeatherMap(city+","+countryCode)
+                    Arrays.stream(weatherMapRepository.callOpenWeatherMap(city+PARAM_SEPARATOR+countryCode)
                             .getWeather()).findFirst()
                     .orElseThrow(() -> new WeatherServiceException("Error while getting weather details"));
 

@@ -7,5 +7,6 @@ public class WeatherServiceException extends RuntimeException{
 
     public WeatherServiceException(String errorMessage) {
         super(errorMessage);
+        this.message = errorMessage;
     }
 }

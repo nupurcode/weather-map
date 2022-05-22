@@ -1,5 +1,5 @@
 services:
   openweathermap:
-    endpoint: 'http://8089'
+    endpoint: 'http://localhost:8089'
     path: '/data/2.5/weather'
     appid: '9c783130312b92a5d55f1786514b6fad'
