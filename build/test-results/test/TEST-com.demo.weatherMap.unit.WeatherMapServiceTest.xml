@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.demo.weatherMap.unit.WeatherMapServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-22T08:56:28" hostname="nav" time="0.255">
-  <properties/>
-  <testcase name="testGetWeatherData_exceptionThrownFromDownstream()" classname="com.demo.weatherMap.unit.WeatherMapServiceTest" time="0.255"/>
-  <system-out><![CDATA[>>>>>>>> inside service method -1 
->>>>>>>> inside service method -3 
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

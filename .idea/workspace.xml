@@ -5,52 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c9afe0-634c-4235-8877-278f2b9d12d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/utils/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/validation/CityName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/validation/CityNameValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/validation/CountryCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/validation/CountryCodeValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/demo/weatherMap/integration/WeatherMapIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/demo/weatherMap/unit/WeatherMapServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/mappings/FailureMapping.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherMap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/controller/WeatherMapController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/controller/WeatherMapController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/controller/WeatherMapExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/controller/WeatherMapExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/dto/ErrorResponse$ErrorResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/dto/ErrorResponse$ErrorResponseBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/dto/ErrorResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/dto/ErrorResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/exception/WeatherServiceException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/exception/WeatherServiceException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/repository/openweathermap/WeatherMapRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/repository/openweathermap/WeatherMapRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/repository/openweathermap/dto/OpenWeatherMapResponse$OpenWeatherMapResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/repository/openweathermap/dto/OpenWeatherMapResponse$OpenWeatherMapResponseBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/repository/openweathermap/dto/OpenWeatherMapResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/repository/openweathermap/dto/OpenWeatherMapResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/repository/openweathermap/dto/WeatherDetail$WeatherDetailBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/repository/openweathermap/dto/WeatherDetail$WeatherDetailBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/repository/openweathermap/dto/WeatherDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/repository/openweathermap/dto/WeatherDetail.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/service/WeatherMapService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/demo/weatherMap/service/WeatherMapService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/demo/weatherMap/blackbox/WeatherMapControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/demo/weatherMap/blackbox/WeatherMapControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/demo/weatherMap/config/OpenWeatherWiremockStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.demo.weatherMap.blackbox.WeatherMapControllerTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/demo/weatherMap/unit/WeatherMapServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/demo/weatherMap/unit/WeatherMapServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.demo.weatherMap.unit.WeatherMapServiceTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.demo.weatherMap.blackbox.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/application-test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/stubs/mappings/FailureMapping.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/stubs/mappings/SuccessMapping.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.demo.weatherMap.blackbox.WeatherMapControllerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.demo.weatherMap.unit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.demo.weatherMap.unit.WeatherMapServiceTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/controller/WeatherMapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/controller/WeatherMapController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/controller/WeatherMapExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/controller/WeatherMapExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/dto/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/dto/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/exception/WeatherServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/exception/WeatherServiceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/repository/openweathermap/WeatherMapRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/repository/openweathermap/WeatherMapRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/repository/openweathermap/dto/OpenWeatherMapResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/repository/openweathermap/dto/OpenWeatherMapResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/repository/openweathermap/dto/WeatherDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/repository/openweathermap/dto/WeatherDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/service/WeatherMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/weatherMap/service/WeatherMapService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/demo/weatherMap/blackbox/WeatherMapControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demo/weatherMap/blackbox/WeatherMapControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/demo/weatherMap/config/OpenWeatherWiremockStub.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/stubs/mappings/FailureMapping.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/stubs/mappings/SuccessMapping.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/mappings/SuccessMapping.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,10 +76,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/resources/mappings" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
@@ -110,13 +95,13 @@
       <recent name="com.demo.weatherMap.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.WeatherMapServiceTest.testGetWeatherData_exceptionThrownFromDownstream">
-    <configuration name="WeatherMapControllerTest.callWeatherApi_errorResponseFromDownstreamAPICall_returnsError" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.WeatherMapControllerTest.callWeatherApi_withoutValidHeader_ReturnUnauthorized">
+    <configuration name="WeatherMapControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.demo.weatherMap.blackbox.WeatherMapControllerTest.callWeatherApi_errorResponseFromDownstreamAPICall_returnsError&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.demo.weatherMap.blackbox.WeatherMapControllerTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -132,12 +117,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WeatherMapServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WeatherMapControllerTest.callWeatherApi_withValidData_returnsSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.demo.weatherMap.unit.WeatherMapServiceTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.demo.weatherMap.blackbox.WeatherMapControllerTest.callWeatherApi_withValidData_returnsSuccess&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -153,12 +138,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WeatherMapServiceTest.testGetWeatherData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WeatherMapControllerTest.callWeatherApi_withoutValidHeader_ReturnUnauthorized" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.demo.weatherMap.unit.WeatherMapServiceTest.testGetWeatherData&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.demo.weatherMap.blackbox.WeatherMapControllerTest.callWeatherApi_withoutValidHeader_ReturnUnauthorized&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -218,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WeatherMapControllerTest.callWeatherApi_withoutValidHeader_ReturnUnauthorized" />
+        <item itemvalue="Gradle.WeatherMapControllerTest" />
+        <item itemvalue="Gradle.WeatherMapControllerTest.callWeatherApi_withValidData_returnsSuccess" />
         <item itemvalue="Gradle.WeatherMapServiceTest.testGetWeatherData_exceptionThrownFromDownstream" />
         <item itemvalue="Gradle.WeatherMapServiceTest.testGetWeatherData_recordFoundFromDatabase" />
-        <item itemvalue="Gradle.WeatherMapServiceTest.testGetWeatherData" />
-        <item itemvalue="Gradle.WeatherMapServiceTest" />
-        <item itemvalue="Gradle.WeatherMapControllerTest.callWeatherApi_errorResponseFromDownstreamAPICall_returnsError" />
       </list>
     </recent_temporary>
   </component>
@@ -275,6 +260,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/demo/weatherMap/controller/WeatherMapExceptionHandler.java</url>
           <line>50</line>
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/demo/weatherMap/service/WeatherMapService.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/demo/weatherMap/service/WeatherMapService.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/demo/weatherMap/service/WeatherMapService.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
