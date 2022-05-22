@@ -27,16 +27,13 @@ public class WeatherMapControllerTest {
     Integer port;
 
     public static WireMockServer wireMockServer;
-    public static HttpHeaders httpHeaders;
-    public String mockAPiKey = "mock-api-key";
+    public String mockAPiKey = "WM-api-key";
 
     String basePath = "http://localhost:";
     String endpoint = "/weather-app/weather/{city}/{countryCode}";
 
     @BeforeAll
     static void setUp() {
-        httpHeaders = new HttpHeaders();
-        httpHeaders.add("x-api-key", "dummy-api-key");
         wireMockServer = new WireMockServer(wireMockConfig()
                 .port(8089));
         wireMockServer.start();
@@ -75,29 +72,26 @@ public class WeatherMapControllerTest {
                 .statusCode(HttpStatus.UNAUTHORIZED.value())
                 .assertThat()
                 .body("message", org.hamcrest.core.StringContains.containsString("x-api-key"));
-
-        //verify NO request sent with unavailable city name to downstream endpoint
-        wireMockServer.verify(0, getRequestedFor(urlEqualTo("/data/2.5/weather?q=Delhi,IN&appId=9c783130312b92a5d55f1786514b6fad")));
     }
 
     @ParameterizedTest
     @CsvSource({
-            "Delhi,I",
-            "Delhi,innnn",
-            "Delhi,&*^%----",
-            "Delhi,null",
-            "Delhi,12988745358751402",
-            "$&%*&^((&*&_*)(_()_),IN",
-            "486768,innnn,IN",
-            "London&*^%----,IN",
-            "D,IN",
-            "----,IN"
+            "Delhi,I, WM-111",
+            "Delhi,innnn, WM-111",
+            "Delhi,&*^%----, WM-111",
+            "Delhi,null, WM-111",
+            "Delhi,12988745358751402, WM-111",
+            "$&%*&^((&*&_*)(_()_),IN, WM-222",
+            "486768,innnn,IN, WM-222",
+            "London&*^%----,IN, WM-222",
+            "D,IN, WM-222",
+            "----,IN, WM-222"
     })
-    public void callWeatherApi_invalidCountryPathParam_ReturnBadRequest(String invalidCountryCodeParam, String invalidCityCodeParam) {
+    public void callWeatherApi_invalidCountryPathParam_ReturnBadRequest(String invalidCountryCodeParam, String invalidCityCodeParam, String apiKey) {
         RestAssured
                 .given()
                 .contentType("application/json")
-                .header(X_API_KEY, mockAPiKey)
+                .header(X_API_KEY, apiKey)
                 .when()
                 .get(basePath+port+endpoint,invalidCityCodeParam,invalidCountryCodeParam)
                 .then()
@@ -112,7 +106,7 @@ public class WeatherMapControllerTest {
         RestAssured
                 .given()
                 .contentType("application/json")
-                .header(X_API_KEY, mockAPiKey)
+                .header(X_API_KEY, "WM-333")
                 .when()
                 .get(basePath+port+endpoint,"Zootopia","UK")
                 .then()

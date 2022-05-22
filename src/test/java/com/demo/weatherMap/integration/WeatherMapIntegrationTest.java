@@ -21,7 +21,7 @@ public class WeatherMapIntegrationTest {
         RestAssured
                 .given()
                 .contentType("application/json")
-                .header(X_API_KEY, "mock-api-key")
+                .header(X_API_KEY, "WM-api-key")
                 .when()
                 .get("http://localhost:"+port+"/weather-app/weather/Delhi/IN")
                 .then()

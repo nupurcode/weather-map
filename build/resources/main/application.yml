@@ -26,8 +26,11 @@ bucket4j:
     - cache-name: buckets
       filter-method: servlet
       url: .*
+      http-response-body: "{ \"message\": \"You have exhausted your hourly API Request Quota\" }"
       rate-limits:
-        - bandwidths:
-            - capacity: 500
-              time: 1
-              unit: hours
+      - expression: "getHeader('X-api-key')"
+        execute-condition: "getHeader('X-api-key') != null && getHeader('X-api-key').startsWith('WM-')"
+        bandwidths:
+        - capacity: 5
+          time: 1
+          unit: hours
