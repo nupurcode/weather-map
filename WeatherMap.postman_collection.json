@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "3f67bd6f-29c3-4813-95e3-120be36bd489",
+		"name": "WeatherMap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4037688"
+	},
+	"item": [
+		{
+			"name": "getWeather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/weatherMap/data/weather/london/uk?apiKey=9c783130312b92a5d55f1786514b6fad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"weatherMap",
+						"data",
+						"weather",
+						"london",
+						"uk"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "9c783130312b92a5d55f1786514b6fad"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "openweathermap.org",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=London,uk&appid=9c783130312b92a5d55f1786514b6fad",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London,uk"
+						},
+						{
+							"key": "appid",
+							"value": "9c783130312b92a5d55f1786514b6fad"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

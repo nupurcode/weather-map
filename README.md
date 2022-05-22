@@ -24,7 +24,14 @@ Refer to the swagger document below.
 It's a Gradle Spring-Boot application. To run it locally:
 * Clone this repo.
 * Run `./gradlew bootRun` inside the project
-
+* Import Postman collection for Testing [WeatherMap Postman Collection](WeatherMap.postman_collection.json)
+* Try getWeather API request from postman
+* Alternatively, can try below curl to make api call
+  ```
+  curl --location 
+  --request GET 'http://localhost:8080/weather-app/weather/london/uk' \
+  --header 'x-api-key: WM-112'
+  ```
 
 
 
